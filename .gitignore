@@ -1,4 +1,6 @@
 *.pyc
+*.nxc
+*.rbe
 MANIFEST
 dist/
 *.egg-info/

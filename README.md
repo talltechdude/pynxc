@@ -16,7 +16,14 @@ How to use
 1. Run `python setup.py install` from the main directory
 1. Connect your NXT brick via USB
 1. Create your Python script and use `pynxc -d myscript.py` to compile and upload it to the NXT
-* There are some samples scripts in the `samples` directory that you can try or learn new functions from
+* There are some sample scripts in the `samples` directory that you can try or learn new functions from
+
+Documentation
+-------------
+* [PyNXC Documentation Wiki](https://code.google.com/archive/p/pynxc/wikis/Documentation.wiki)
+* [NXC C Code Tutorials](http://bricxcc.sourceforge.net/nbc/nxcdoc/NXC_tutorial.pdf)
+* [NXC C Code Function Reference](http://bricxcc.sourceforge.net/nbc/nxcdoc/NXC_Guide.pdf)
+* A [write up](http://digitalcommons.bryant.edu/cgi/viewcontent.cgi?article=1017&context=sci_jou) of Python-based NXT code
 
 How is this different
 ---------------------
