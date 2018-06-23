@@ -24,8 +24,8 @@ inline int SensorVal(int s_) {
         return SensorUS(s_);
     } else if (t_ == COMPASS) {
         return SensorHTCompass(s_);
-    } else if (t_ == GYRO) {
-        return SensortHTGyro(s_);
+/*    } else if (t_ == GYRO) {
+        return SensortHTGyro(s_);*/
     } else {
         return Sensor(s_);
     }
@@ -138,5 +138,3 @@ void lcd_print(string text)
         _cur_lcd_line++;
     }
 }
-
-

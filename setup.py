@@ -14,8 +14,12 @@ setup(name='pynxc',
     url='https://github.com/xlcteam/pynxc',
     packages=['pynxc'],
 
-    data_files=[('tests', ['pynxc/tests/tests.py']), 
-		('', ['pynxc/defs.h'])],
+    data_files=[
+        ('tests', ['pynxc/tests/tests.py']),
+		('pynxc', ['pynxc/defs.h']),
+        ('pynxc/nxc/darwin', ['pynxc/nxc/darwin/nbc']),
+        ('pynxc/nxc/darwin', ['pynxc/nxc/darwin/nxtcom'])
+        ],
 
     entry_points = {
         'console_scripts': [

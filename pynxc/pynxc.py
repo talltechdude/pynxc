@@ -103,7 +103,7 @@ def main():
 
     # config=readconfig('pynxc.yaml')
     config = {'firmware': 128}
-    nxc = os.path.join("nxc", sys.platform, 'nbc')
+    nxc = pynxc_root + os.sep + os.path.join("nxc", sys.platform, 'nbc')
     if not os.path.exists(nxc):
         nxc = 'nbc'  # expect 'nbc' in the binary PATH
 
