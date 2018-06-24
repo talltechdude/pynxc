@@ -23,6 +23,9 @@ Documentation
 * [PyNXC Documentation Wiki](https://code.google.com/archive/p/pynxc/wikis/Documentation.wiki)
 * [NXC C Code Tutorials](http://bricxcc.sourceforge.net/nbc/nxcdoc/NXC_tutorial.pdf)
 * [NXC C Code Function Reference](http://bricxcc.sourceforge.net/nbc/nxcdoc/NXC_Guide.pdf)
+* [Additional NXC guide](http://lego.itam.mx/misc/manuales/NXC/guide.pdf)
+* [Not eXactly C Wikipedia](https://en.wikipedia.org/wiki/Not_eXactly_C)
+* [Not eXactly C API](http://bricxcc.sourceforge.net/nbc/nxcdoc/nxcapi/index.html)
 * A [write up](http://digitalcommons.bryant.edu/cgi/viewcontent.cgi?article=1017&context=sci_jou) of Python-based NXT code
 
 How is this different
