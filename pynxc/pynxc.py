@@ -124,13 +124,16 @@ def main():
     parser.add_option('-d', '--download', dest="download",
                       help='download program', default=False,
                       action="store_true")
+    parser.add_option('-r', '--run', dest="run",
+                      help='run program immediately', default=False,
+                      action="store_true")
     parser.add_option('-B', '--bluetooth', dest="bluetooth",
                       help='enable bluetooth', default=False,
                       action="store_true")
     parser.add_option('-q', '--quiet', dest="quiet",
                       help='stay quiet (prints no output)', default=False,
                       action="store_true")
-    parser.add_option('-r', '--dry', dest="dry",
+    parser.add_option('--dry', dest="dry",
                       help='dry run (without headers)', default=False,
                       action="store_true")
     parser.add_option('--firmware', dest="firmware",
@@ -198,17 +201,23 @@ def main():
             a = os.system(cmd)
 
             if options.download:
-                print "Downloading...",
                 cmd = options.nxc + " "
                 cmd = cmd + nxc_filename + " -I='%s/' -S=usb -I='%s/' -v=%s -d" % (nxc_root,
                                                                                   pynxc_root,
                                                                                   options.firmware)
                 a = os.system(cmd)
-                nxtcom = os.path.join(nxc_root, 'nxtcom')
-                if options.debug: print nxtcom
-                if os.path.exists(nxtcom):
-                    cmd = '%s %s' % (nxtcom, rxe_filename)
+                
+                if options.run:
+                    print "Downloading and running file..."
+                    cmd = '%s -r -b %s' % (options.nxc, rxe_filename)
                     a = os.system(cmd)
+                else:
+                    print "Downloading..."
+                    nxtcom = os.path.join(nxc_root, 'nxtcom')
+                    if options.debug: print nxtcom
+                    if os.path.exists(nxtcom):
+                        cmd = '%s %s' % (nxtcom, rxe_filename)
+                        a = os.system(cmd)
 
                 print "done."
 

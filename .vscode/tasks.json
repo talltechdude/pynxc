@@ -6,7 +6,7 @@
         {
             "label": "Upload to NXT",
             "type": "shell",
-            "command": "pynxc -d '${relativeFile}'",
+            "command": "pynxc -d -r '${relativeFile}'",
             "group": {
                 "kind": "build",
                 "isDefault": true
