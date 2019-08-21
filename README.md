@@ -18,7 +18,7 @@ How to use
    1. Open Terminal app
    1. Type `cd` in the Terminal and drag the folder into the Terminal window
    1. Run `git clone https://github.com/talltechdude/pynxc.git` from terminal to download the Python Library
-   1. Run `sudo python setup.py install` to install the library
+   1. Run `cd pynxc && sudo python setup.py install` to install the library
 1. Download and Install [Visual Studio Code](https://code.visualstudio.com/download)
 1. Open Visual Studio Code and use `File` -> `Open Workspace` to open the `pynxc.code-workspace` file
 1. Connect your NXT brick via USB
