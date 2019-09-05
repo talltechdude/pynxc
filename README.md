@@ -23,7 +23,7 @@ How to use
 1. Open Visual Studio Code and use `File` -> `Open Workspace` to open the `pynxc.code-workspace` file
 1. Connect your NXT brick via USB
 1. Open the `src/helloworld.py` or one of the Python files in the `samples` folder
-1. Press `CMD+Shift+B` to build and upload the program to your Robot
+1. Press `CMD+Shift+B` to build and upload the program to your Robot (this will only work if using the provided `pynxc.code-workspace` file)
 * There are some sample scripts in the `samples` directory that you can try or learn new functions from
 
 Documentation
